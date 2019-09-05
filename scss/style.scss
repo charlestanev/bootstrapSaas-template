@@ -1,0 +1,69 @@
+$primary: #E07BE0;
+$primary-overlay: rgba(147, 47, 109, 0.8);
+
+body {
+  margin-top: 105px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 5px $primary;
+  opacity: 0.9;
+  background: #F6F2FF;
+
+  .nav-item {
+    font-size: 1.4rem;
+    padding-right: 1.4rem;
+  }
+}
+
+#showcase {
+  position: relative;
+  background: url('../img/mountains.jpg');
+  min-height: 600px;
+
+  .primary-overlay {
+    background: $primary-overlay;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+#authors {
+  img {
+    margin-top: -50px;
+  }
+
+  .card:hover {
+    background: $primary;
+    color: #F6F2FF;
+  }
+
+  .fab {
+    color: #F6F2FF;
+  }
+}
+
+
+
+@media(max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  .mb-resp {
+    margin-bottom: 1rem;
+  }
+}
